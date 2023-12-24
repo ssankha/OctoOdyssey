@@ -26,7 +26,8 @@ def main():
     
     # create sprite group for enemies
     enemy_group = pg.sprite.Group()
-    beachball = BeachBall((32, 32), beachball_image)
+    waypoints = [(100, 200), (300, 400), (50, 600)]
+    beachball = BeachBall(waypoints, beachball_image)
     enemy_group.add(beachball)
     
     # game loop
